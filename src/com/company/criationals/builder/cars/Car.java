@@ -4,6 +4,8 @@ import com.company.criationals.builder.components.CarType;
 import com.company.criationals.builder.components.Engine;
 import com.company.criationals.builder.components.TransmissionType;
 
+import java.util.Objects;
+
 public class Car {
 
     private final CarType carType;

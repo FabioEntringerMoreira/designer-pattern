@@ -8,6 +8,9 @@ import com.company.criationals.builder.cars.SportCar;
 import com.company.criationals.builder.cars.Truck;
 import com.company.criationals.builder.directors.Director;
 
+import java.io.*;
+import java.math.BigDecimal;
+
 /**
  *The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems
  * in object-oriented programming.
@@ -34,5 +37,9 @@ public class Builder {
         director.constructSportCar(sportCarBuilder);
         SportCar sportCar = sportCarBuilder.getResult();
         System.out.println(sportCar.getCarType() + ", " + sportCar.getColorEnum() + ", " + sportCar.getEngine().getPower());
+
+        System.out.println("--------");
+
+        System.out.println(new BigDecimal("0.4").subtract(new BigDecimal("0.3")));
     }
 }
